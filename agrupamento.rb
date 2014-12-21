@@ -16,7 +16,7 @@ def agrupa_por_distrito(dir, file_name, csv_file)
   lines.each do |line|
 
      if(i <= 3)
-       distrito = line[1].slice(0..(line[1].index('/') - 2))
+       distrito = dicionario[line[1].slice(0..(line[1].index('/') - 2))]
        fila = line[3].to_i
        filas[distrito] = filas[distrito].nil? ? fila : filas[distrito].to_i + fila
      end
@@ -40,5 +40,5 @@ end
 #*****************PARA RODAR ESSE ARQUIVO***********************
 ################################################################
 
-dir = "/var/www/html/cuidando2/creches/Site/scripts/2014-12-18 12:50/"#Diretório onde estão os arquivos
-agrupa_por_distrito dir, "agrupado_por_distritos.csv", dir + "scrap.csv"
+#dir = "/var/www/html/cuidando2/creches/Site/scripts/2014-12-18 12:50/"#Diretório onde estão os arquivos
+#agrupa_por_distrito dir, "agrupado_por_distritos.csv", dir + "scrap.csv"
