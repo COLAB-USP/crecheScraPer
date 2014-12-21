@@ -2,8 +2,9 @@
 
 #cria diretorio com data/hora
 require 'fileutils'
+require_relative 'config'
 t = Time.new
-dir = "#{Dir.pwd}/#{t.year}-#{ t.month <= 9 ? '0' + t.month.to_s : t.month }-#{ t.day <= 9 ? '0' + t.day.to_s : t.day  } #{ t.hour <= 9 ? '0' + t.hour.to_s : t.hour }:#{ t.min <= 9 ? '0' + t.min.to_s : t.min }/"
+dir = "#{directory}/#{t.year}-#{ t.month <= 9 ? '0' + t.month.to_s : t.month }-#{ t.day <= 9 ? '0' + t.day.to_s : t.day  } #{ t.hour <= 9 ? '0' + t.hour.to_s : t.hour }:#{ t.min <= 9 ? '0' + t.min.to_s : t.min }/"
 FileUtils::mkdir_p dir
 
 #1 ler dados
