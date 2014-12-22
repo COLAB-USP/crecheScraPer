@@ -6,7 +6,7 @@ def scrap_data_from_website
   @driver = Selenium::WebDriver.for :firefox
   @driver.navigate.to "http://eolgerenciamento.prefeitura.sp.gov.br/se1426g/frmgerencial/ConsultaCandidatosCadastrados.aspx?Cod=000000"
 
-  n_diretorias = 1
+  n_diretorias = 13
   n_faixas_etarias = 6
   diretorias_regionais = @driver.find_element(:id, "cboDRE").text.split("\n")
   faixas_etarias = @driver.find_element(:id, "cboFaixaEtaria").text.split("\n")
