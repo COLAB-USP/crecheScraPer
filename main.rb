@@ -20,5 +20,6 @@ require_relative 'associacao_populacao_seade'
 associa_populacao dir, "fila.csv", dir + "agrupado_por_distritos.csv", "data/populacao_0_4_anos.csv"
 
 #4 atualiza arquivo no diretorio do Site
-#FileUtils::rm "#{Dir.pwd}/filas.csv", :force => true
-#FileUtils::cp file_final, @dir_data
+
+FileUtils::rm "#{diretorio_site}/fila.csv", :force => true
+FileUtils::cp dir + "filas.csv", diretorio_site
