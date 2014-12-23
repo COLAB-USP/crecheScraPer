@@ -21,5 +21,5 @@ associa_populacao dir, "fila.csv", dir + "agrupado_por_distritos.csv", "data/pop
 
 #4 atualiza arquivo no diretorio do Site
 
-FileUtils::rm "#{diretorio_site}/fila.csv", :force => true
+FileUtils::rm "#{diretorio_site}/filas.csv", :force => true
 FileUtils::cp dir + "filas.csv", diretorio_site
