@@ -30,6 +30,5 @@ end
 ################################################################
 #*****************PARA RODAR ESSE ARQUIVO***********************
 ################################################################
-
-#dir = "/var/www/html/cuidando2/creches/Site/scripts/2014-12-18 12:50/"#Diretório onde estão os arquivos
+#dir = "/home/jeff/Desktop/crecheScraPer/dados/2014-12-22 15:06/"#Diretório onde estão os arquivos
 #associa_populacao dir, "filas.csv", dir + "agrupado_por_distritos.csv", "data/populacao_0_4_anos.csv"

@@ -1,5 +1,5 @@
-def dicionario
-  {
+def dicionario(distrito)
+  caracteres = {
     'AGUA RASA' => 'ÁGUA RASA',
     'GRAJAU' => 'GRAJAÚ',
     'CAPAO REDONDO' => 'CAPÃO REDONDO',
@@ -35,6 +35,7 @@ def dicionario
     'FREGUESIA DO O' => 'FREGUESIA DO Ó',
     'LIMAO' => 'LIMÃO'
   }
+  return !caracteres[distrito].nil? ? caracteres[distrito] : distrito
 end
 
 def butanta
