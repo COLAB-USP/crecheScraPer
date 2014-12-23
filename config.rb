@@ -1,7 +1,7 @@
 def directory
-  "/home/jeff/Desktop/crecheScraPer/dados/"
+  "/var/www/crecheScraPerData/"
 end
 
 def diretorio_site
-  "/var/www/cuidando2/data/filas/"
+  "/var/www/cuidando2/creches/Site/data/"
 end
