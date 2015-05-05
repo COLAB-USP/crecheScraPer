@@ -1,4 +1,5 @@
 require 'csv'
+require 'fileutils'
 def associa_populacao dir, arquivo_saida, filas_distritos, dados_populacao
   fila = {}
   populacao = {}
@@ -18,6 +19,7 @@ def associa_populacao dir, arquivo_saida, filas_distritos, dados_populacao
   end
 
   #write
+ 
   CSV.open(dir + arquivo_saida, "wb") do |csv|
     csv << ["Distrito", "Indice per capta (*100)", "Tamanho da fila", "Populacao"]
     i = 1
@@ -30,5 +32,5 @@ end
 ################################################################
 #*****************PARA RODAR ESSE ARQUIVO***********************
 ################################################################
-#dir = "/home/jeff/Desktop/crecheScraPer/dados/2014-12-22 15:06/"#Diretório onde estão os arquivos
+#dir = "/var/www/crecheScraPerData/2015-05-05 04:33/"#Diretório onde estão os arquivos
 #associa_populacao dir, "filas.csv", dir + "agrupado_por_distritos.csv", "data/populacao_0_4_anos.csv"

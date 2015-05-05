@@ -39,6 +39,5 @@ end
 ################################################################
 #*****************PARA RODAR ESSE ARQUIVO***********************
 ################################################################
-
-#dir = "/home/jeff/Desktop/crecheScraPer/dados/2014-12-22 15:06/"#Diretório onde estão os arquivos
-#agrupa_por_distrito dir, "agrupado_por_distritos.csv", dir + "scrap.csv"
+dir = "/var/www/crecheScraPerData/2015-04-17 17:00/" #Diretório onde estão os arquivos
+agrupa_por_distrito dir, "agrupado_por_distritos.csv", dir + "scrap.csv"

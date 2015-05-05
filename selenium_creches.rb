@@ -13,7 +13,6 @@ def scrap_data_from_website
   erros = []
 
   (1..n_diretorias).each do |dre|
-
     selecione_diretoria_regional(dre)
     setores(dre).each do |s|
       selecione_setor s
