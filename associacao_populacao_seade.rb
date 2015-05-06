@@ -32,5 +32,7 @@ end
 ################################################################
 #*****************PARA RODAR ESSE ARQUIVO***********************
 ################################################################
-#dir = "/var/www/crecheScraPerData/2015-05-05 04:33/"#Diretório onde estão os arquivos
-#associa_populacao dir, "filas.csv", dir + "agrupado_por_distritos.csv", "data/populacao_0_4_anos.csv"
+#dir = "/var/www/crecheScraPerData/historico/2015-04-22 12:17"#Diretório onde estão os arquivos
+#diretorios = Dir.foreach("/var/www/crecheScraPerData/historico/") do |dir| 
+#	associa_populacao "/var/www/crecheScraPerData/historico/" + dir + "/", "filas.csv","/var/www/crecheScraPerData/historico/" + dir + "/agrupado_por_distritos.csv", "/var/www/crecheScraPer/data/populacao_0_4_anos.csv" if dir != "." and dir != ".."
+#end
